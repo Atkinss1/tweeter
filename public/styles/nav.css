@@ -1,11 +1,39 @@
 nav {
+  display: flex;
+  justify-content: space-between;
   height: 120px;
   background-color: #4056A1;
   color: #FFFFFF;
   width: 100%;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 nav span {
   font-family: "Bungee", sans-serif;
+}
+
+.headerRightContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: .5em;
+}
+
+.innerRightContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.write {
+  display: flex;
+  padding-right: .5em;
+  font-family: "bungee", sans-serif;
+  
+ }
+
+.headerSans {
+  display: flex;
+  font-family: "Source Sans 3", sans-serif;
+
 }
