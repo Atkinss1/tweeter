@@ -12,25 +12,18 @@ nav span {
   font-family: "Bungee", sans-serif;
 }
 
-.headerRightContainer {
+.nav-action {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: .5em;
 }
 
-.innerRightContainer {
+.nav-right {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  padding-right: 1.5em ;
 }
-
-.write {
-  display: flex;
-  padding-right: .5em;
-  font-family: "bungee", sans-serif;
-  
- }
 
 .headerSans {
   display: flex;
