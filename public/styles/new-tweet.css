@@ -1,19 +1,25 @@
-.container {
-
+main {
   width: 90%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #FFFFFF;
+ }
+ 
+ .text-box {
+  width: 100%;
  }
 
  .new-tweet {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
  }
 
  .new-tweet textarea {
   height: 2em;
-  width: 25em;
+  width: 100%;
   border: none;
   border-bottom: 4px solid black;
   box-sizing: border-box;
