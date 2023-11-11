@@ -2,13 +2,13 @@
   height: 520px;
   padding-top: 5em;
   width: 100%;
-  background-color: rgb(245, 245, 6);
+  background-color: #0D8CFF;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.avatar {
-
+.name {
+  color: #FFFFFF;
 }
