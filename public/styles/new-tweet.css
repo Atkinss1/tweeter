@@ -3,7 +3,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #bebebe;
  }
  
  .text-box {
@@ -23,7 +23,7 @@ main {
   border: none;
   border-bottom: 4px solid black;
   box-sizing: border-box;
-  background-color:  #FFFFFF;
+  background-color:  #bebebe;
   font-size: inherit;
   resize: none;
   outline: none;
@@ -31,7 +31,7 @@ main {
  }
 
  .new-tweet ::placeholder {
-  color:#1DA1F2;
+  color:rgb(209, 73, 10);
   font-weight: bold;
  }
 
@@ -43,6 +43,6 @@ main {
   }
 
   .button {
-    background-color: #1DA1F2;;
+    background-color: rgb(209, 73, 10);
     color: #FFFFFF;
   }
