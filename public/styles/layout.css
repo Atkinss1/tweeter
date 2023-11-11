@@ -33,4 +33,12 @@ body {
  .title {
   font-family: "Bungee", sans-serif;
   font-size: 2em;
+  border-radius: 4px;
+ }
+
+ .title:hover {
+  text-shadow: 0 10px 20px rgb(255, 255, 255);
+  transition: 0.6s ease-in;
+  cursor: pointer;
+
  }
