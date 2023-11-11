@@ -18,13 +18,14 @@ main {
  }
 
  .new-tweet textarea {
-  height: 2em;
+  min-height: auto;
   width: 100%;
   border: none;
   border-bottom: 4px solid black;
   box-sizing: border-box;
   background-color:  #bebebe;
   font-size: inherit;
+  font-weight: bold;
   resize: none;
   outline: none;
   overflow: auto;
@@ -43,6 +44,25 @@ main {
   }
 
   .button {
-    background-color: rgb(209, 73, 10);
-    color: #FFFFFF;
+  background-color: rgb(209, 73, 10);
+  color: #FFFFFF;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgb(209, 73, 10);
   }
+  
+  .button:hover {
+  animation: button 0.4s ease-out;
+  }
+
+  @keyframes button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
