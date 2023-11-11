@@ -9,7 +9,7 @@ $(document).ready(function() {
     counterElement.text(remainingChars);
 
     if (remainingChars < 0) {
-      counterElement.css('color', 'red');
+      counterElement.css('color', 'rgb(209, 73, 10)');
     } else {
       counterElement.css('color', '');
     }
