@@ -30,6 +30,23 @@ main {
   outline: none;
   overflow: auto;
  }
+ 
+ .new-tweet textarea:hover {
+  min-height: auto;
+  width: 100%;
+  border: none;
+  border-bottom: 4px solid black;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color:  #bebebe;
+  font-size: inherit;
+  font-weight: bold;
+  resize: none;
+  outline: none;
+  overflow: auto;
+  text-shadow: 0 10px 20px rgb(209, 73, 10);
+  transition: text shadow 1s ease-in;
+ }
 
  .new-tweet ::placeholder {
   color:rgb(209, 73, 10);
@@ -52,7 +69,7 @@ main {
   }
   
   .button:hover {
-  animation: button 0.4s ease-out;
+  animation: button 1s ease-out infinite;
   }
 
   @keyframes button {
