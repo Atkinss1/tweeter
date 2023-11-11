@@ -16,7 +16,7 @@ html {
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #FFFFFF;
   font-family: "Source Sans 3", sans-serif;
   font-size: 24px;
 }
@@ -29,10 +29,4 @@ body {
  .title {
   font-family: "Bungee", sans-serif;
   font-size: 2em;
- }
-
- .container {
-  width: 90%;
-  margin: auto;
-  background-color: inherit;
  }
