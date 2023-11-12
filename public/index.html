@@ -42,6 +42,7 @@
       <img src="/images/1000_F_632181738_93weL8X66KWgc1EcuTkczBKaDIUY2AmZ-fotor-202311102213.png" class="avatar">
     <div class="name">
         <h2>Jordan Atkins</h2>
+        <h4 class="username">@Atkinss</h4>
     </div>
     </header>
 
@@ -50,8 +51,8 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
           <form class="text-box" action="/tweets" method="post">
-            <label for="tweet-text"></label>
-              <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+            
+              <textarea name="text" placeholder="What are you humming about?"></textarea>
                 <div class="button-counter">
                   <button class="button" type="submit">Tweet</button>
                   <output name="counter" class="counter" for="tweet-text">
@@ -59,15 +60,19 @@
                   </output>
                 </div>
           </form>
+          <!-- This section is for individual Tweets -->
           <section class="tweet-container">
             <article id="tweet-article">
-            <header id="header">
+            <header class="new-tweet-header">
+              <!-- profile picture and username-->
               <div class="icon-username"><i class="fa-solid fa-hat-wizard" style="color: #d1490a;"></i>Rhoda Jacobs</div>
               <div>@MrsJacobs</div>
             </header>
+            <!-- tweet post -->
             <div class="tweet">Hello world!</div>
-            <div id="bottom-border"></div>
-            <footer id="footer">
+            <div class="bottom-border"></div>
+            <footer class="new-tweet-footer">
+              <!-- posted tweet date and icons -->
             <div class="tweet-date">
               10 days ago
               <div class="tweet-icons">
