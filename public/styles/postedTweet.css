@@ -10,6 +10,10 @@ article {
   width: 100%;
 }
 
+.tweet-container:hover {
+  box-shadow: 4px 4px #666;
+}
+
 #header {
   display: flex;
   width: 99%;
@@ -17,6 +21,10 @@ article {
   flex-direction: row;
   justify-content: space-between;
   padding: 1em;
+}
+
+.fa-hat-wizard {
+  padding-inline: 1em .5em;
 }
 
 .tweet {
