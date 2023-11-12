@@ -5,6 +5,10 @@ main {
   align-items: center;
   background-color: #bebebe;
  }
+
+ .compose-tweet {
+  margin-bottom: .5em;
+ }
  
  .text-box {
   width: 100%;
