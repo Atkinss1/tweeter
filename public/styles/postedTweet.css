@@ -1,7 +1,8 @@
 .tweet-container {
   display: flex;
+  align-items: center;
   width: 100%;
-  margin-top: 1em;
+  margin-top: 2em;
   border: 4px solid black;
 }
 
@@ -9,10 +10,90 @@ article {
   width: 100%;
 }
 
-header {
+#header {
   display: flex;
-  width: 100%;
+  width: 99%;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
   padding: 1em;
 }
+
+.tweet {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-inline: 2em;
+  font-weight: bold;
+
+}
+
+#bottom-border {
+  border-bottom: 4px solid black;
+  margin: 1em;
+}
+
+#footer .tweet-date{
+  display: flex;
+  justify-content: space-between;
+  padding: 0em 1em 1em 1em;
+}
+
+.tweet-icons {
+  display: flex;
+  width: 8%;
+  justify-content: space-between;
+  color: #d1490a;
+}
+
+.tweet-icons .fa-flag {
+  cursor: pointer;
+  color: #d1490a;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.tweet-icons .fa-flag:hover {
+  cursor: pointer;
+  color: #394148;
+}
+
+.tweet-icons .fa-flag:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.tweet-icons .fa-retweet {
+  cursor: pointer;
+  color: #d1490a;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.tweet-icons .fa-retweet:hover {
+  cursor: pointer;
+  color: #394148;
+}
+
+.tweet-icons .fa-retweet:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.tweet-icons .fa-heart {
+  cursor: pointer;
+  color: #d1490a;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.tweet-icons .fa-heart:hover {
+  cursor: pointer;
+  color: #394148;
+}
+
+.tweet-icons .fa-heart:active{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
