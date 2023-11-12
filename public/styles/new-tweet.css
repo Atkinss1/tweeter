@@ -5,7 +5,6 @@ main {
   align-items: center;
   background-color: #bebebe;
  }
-
  .compose-tweet {
   margin-bottom: .5em;
  }
@@ -26,6 +25,7 @@ main {
   width: 100%;
   border: none;
   border-bottom: 4px solid black;
+  line-height: 22px;
   box-sizing: border-box;
   background-color:  #bebebe;
   font-size: inherit;
