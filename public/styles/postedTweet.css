@@ -14,7 +14,7 @@ article {
   box-shadow: 4px 4px #666;
 }
 
-#header {
+.new-tweet-header {
   display: flex;
   width: 99%;
   align-items: center;
@@ -36,16 +36,18 @@ article {
 
 }
 
-#bottom-border {
+.bottom-border {
   border-bottom: 4px solid black;
   margin: 1em;
 }
 
-#footer .tweet-date{
+.new-tweet-footer .tweet-date{
   display: flex;
   justify-content: space-between;
   padding: 0em 1em 1em 1em;
 }
+
+/* Footer icons */
 
 .tweet-icons {
   display: flex;
