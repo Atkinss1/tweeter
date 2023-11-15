@@ -72,7 +72,7 @@ $(document).ready(function() {
         <div class="bottom-border"></div>
         <footer class="new-tweet-footer">
           <div class="tweet-date">
-          ${unixTimeToTimeAgo(tweet.created_at)}
+          ${timeago.format(tweet.created_at)}
             <div class="tweet-icons">
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
