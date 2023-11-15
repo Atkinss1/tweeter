@@ -104,5 +104,23 @@ $(document).ready(function() {
     });
   });
 
+  const loadTweets = function(tweetData) {
+   
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
+      type: 'json',
+      success: function(recievedTweets) {
+        console.log('Successfully recieved tweets from the server');
+        renderTweets(recievedTweets);
+      },
+      error: function(err) {
+        console.log(`Error fetching tweets: ${err}`);
+      }
+    });
+  };
+
+  loadTweets();
+
 });
 
