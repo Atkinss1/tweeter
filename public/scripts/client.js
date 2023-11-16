@@ -75,15 +75,16 @@ $(document).ready(function() {
       url: '/tweets',
       data: $formData,
       success: function(res) {
+        $('.tweet-text').val('');
         console.log(`Success: ${res}`);
       },
-      error: function (err) {
+      error: function(err) {
         console.log(`Error: ${err}`);
       }
     });
   });
 
-  const loadTweets = function(tweetData) {
+  const loadTweets = function() {
    
     $.ajax({
       url: '/tweets',
