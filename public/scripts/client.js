@@ -4,38 +4,12 @@
 * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 */
 
-const data = [
-  {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png"
-      ,
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1699934322
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd" },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1699934400
-  }
-];
-  
 $(document).ready(function() {
   const renderTweets = function(tweets) {
     for (const tweet of tweets) {
-      $('.main-tweet-container').append(createTweetElement(tweet));
+      $('.main-tweet-container').prepend(createTweetElement(tweet));
     }
   };
-
 
   const createTweetElement = function(tweet) {
     const $tweet = $(`
@@ -55,7 +29,7 @@ $(document).ready(function() {
             <div class="tweet-icons">
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-heart" id="heart-icon"></i>
             </div>
           </div>
         </footer>
@@ -64,11 +38,21 @@ $(document).ready(function() {
   
     return $tweet;
   };
-  renderTweets(data);
 
   $('.text-box').on('submit', (event) => {
     event.preventDefault();
     const $formData = $('.text-box').serialize();
+    const maxCharLength = 140;
+    const $textValue = $('textarea').val();
+    const $textLength = $textValue.length;
+
+    if ($textLength === 0) {
+      return $('#display-empty-message').fadeIn().delay(3000).fadeOut();
+    }
+
+    if ($textLength > maxCharLength) {
+      return $('#display-maximum-message').fadeIn().delay(3000).fadeOut();
+    }
    
     $.ajax({
       type: 'POST',
@@ -77,6 +61,8 @@ $(document).ready(function() {
       success: function(res) {
         $('.tweet-text').val('');
         console.log(`Success: ${res}`);
+        loadTweets();
+
       },
       error: function(err) {
         console.log(`Error: ${err}`);
@@ -89,7 +75,7 @@ $(document).ready(function() {
     $.ajax({
       url: '/tweets',
       method: 'GET',
-      type: 'json',
+      dataType: 'json',
       success: function(recievedTweets) {
         console.log('Successfully recieved tweets from the server');
         renderTweets(recievedTweets);
