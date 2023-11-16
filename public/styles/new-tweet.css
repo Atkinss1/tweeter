@@ -88,3 +88,15 @@ main {
     transform: scale(1);
   }
 }
+
+/* textarea Error messages */
+
+#display-empty-message {
+  display: none;
+  color: red;
+}
+
+#display-maximum-message {
+  display: none;
+  color: red;
+}
