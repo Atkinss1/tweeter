@@ -5,13 +5,32 @@
 */
 
 $(document).ready(function() {
+
+  // Displays tweets from database given in parameter in reverse order
+
   const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       $('.main-tweet-container').prepend(createTweetElement(tweet));
     }
   };
 
+  /**
+   * Takes in string from tweet content and creates a text node so the browser reads the string as plain text and escapes interpreting HTML
+   *
+   * @param {} str
+   * @returns
+   */
+  const escape = function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
+  // Creates new tweet template
+
   const createTweetElement = function(tweet) {
+    const safeHTML = escape(tweet.content.text);
+    
     const $tweet = $(`
     <section class="tweet-container">
       <article class="tweet-article">
@@ -21,7 +40,7 @@ $(document).ready(function() {
           ${tweet.user.name}</div>
           <div>${tweet.user.handle}</div>
         </header>
-        <div class="tweet">${tweet.content.text}</div>
+        <div class="tweet">${safeHTML}</div>
         <div class="bottom-border"></div>
         <footer class="new-tweet-footer">
           <div class="tweet-date">
@@ -29,7 +48,7 @@ $(document).ready(function() {
             <div class="tweet-icons">
               <i class="fa-solid fa-flag"></i>
               <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart" id="heart-icon"></i>
+              <i class="fa-solid fa-heart"></i>
             </div>
           </div>
         </footer>
@@ -39,6 +58,8 @@ $(document).ready(function() {
     return $tweet;
   };
 
+  // event handler when tweet is submitted
+
   $('.text-box').on('submit', (event) => {
     event.preventDefault();
     const $formData = $('.text-box').serialize();
@@ -47,7 +68,7 @@ $(document).ready(function() {
     const $textLength = $textValue.length;
 
     if ($textLength === 0) {
-      return $('#display-empty-message').fadeIn().delay(3000).fadeOut();
+      return $('#display-empty-message').fadeIn('slow').delay(3000).fadeOut();
     }
 
     if ($textLength > maxCharLength) {
