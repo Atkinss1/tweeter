@@ -17,4 +17,21 @@ $(document).ready(function() {
     }
 
   });
+  // listener for button to scroll to top
+  $(window).scrollTop(0);
+
+  $(window).on('scroll', function() {
+  
+    if ($(window).scrollTop() > 100) {
+      $('.container-top').show();
+    } else {
+      $('.container-top').hide();
+    }
+  });
+
+  $('.container-top').on('click', function() {
+    $('html, body').animate({scrollTop: 0 }, 'slow', function() {
+      $('.tweet-text').focus();
+    });
+  });
 });
