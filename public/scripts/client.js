@@ -115,10 +115,14 @@ $(document).ready(function() {
 
   const $newTweet = document.querySelector('#slide-out-tweet');
   const $tweetContainer = document.querySelector('.new-tweet');
-  
   $($tweetContainer).hide();
+
+  const toggleTextBox = function(element) {
+    $(element).slideToggle().find($('textarea')).focus();
+  }
+  
   $($newTweet).on('click', function() {
-    $($tweetContainer).slideToggle().find($('textarea')).focus();
+    toggleTextBox($tweetContainer);
   });
 
   // allow user to submit the form using "Enter" keypress
