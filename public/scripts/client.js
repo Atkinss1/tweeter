@@ -9,6 +9,7 @@ $(document).ready(function() {
   // Displays tweets from database given in parameter in reverse order
 
   const renderTweets = function(tweets) {
+    $('.main-tweet-container').empty();
     for (const tweet of tweets) {
       $('.main-tweet-container').prepend(createTweetElement(tweet));
     }
