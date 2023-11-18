@@ -53,22 +53,25 @@
     <main>
       <section class="new-tweet">
         <h2 class="compose-tweet">Compose Tweet</h2>
-          <form class="text-box" action="/tweets" method="post">
-              <textarea name="text" class="tweet-text" placeholder="What are you humming about?"></textarea>
-                <div class="button-counter">
-                  <button class="button" type="submit">Tweet</button>
-                  <div id="display-empty-message">Please provide a tweet before submitting..</div>
-                  <div id="display-maximum-message">The tweet has exceeded max character count..</div>
-                  <output name="counter" class="counter" for="tweet-text">
-                    140
-                  </output>
-                </div>
-          </form>
-          <!-- This section is for individual Tweets -->
+        <form class="text-box" action="/tweets" method="post">
+          <textarea name="text" class="tweet-text" placeholder="What are you humming about?"></textarea>
+          <div class="button-counter">
+            <button class="button" type="submit">Tweet</button>
+            <div id="display-empty-message">Please provide a tweet before submitting..</div>
+            <div id="display-maximum-message">The tweet has exceeded max character count..</div>
+            <output name="counter" class="counter" for="tweet-text">
+              140
+            </output>
+          </div>
+        </form>
+        <!-- This section is for individual Tweets -->
       </section>
       <div class="main-tweet-container">
       </div>
     </main>
+    <div class="container-top">
+      <i class="fa-regular fa-circle-up"></i>
+    </div>
   </body>
 </html>
 
