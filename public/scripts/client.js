@@ -110,5 +110,23 @@ $(document).ready(function() {
 
   loadTweets();
 
+
+  // hide our tweet form and wait for a click event
+
+  const $newTweet = document.querySelector('#slide-out-tweet');
+  const $tweetContainer = document.querySelector('.new-tweet');
+  
+  $($tweetContainer).hide();
+  $($newTweet).on('click', function() {
+    $($tweetContainer).slideToggle().find($('textarea')).focus();
+  });
+
+  // allow user to submit the form using "Enter" keypress
+  $('.text-box').on('keypress', function(event) {
+    if (event.keyCode === 13) {
+      $(this).submit();
+    }
+  });
+
 });
 
