@@ -43,6 +43,15 @@
     cursor: pointer;
   }
 
+   .fa-angles-down {
+    animation: pulse 1s infinite ease-in-out alternate;
+  }
+    @keyframes pulse {
+    from { transform: scale(.8); }
+    to { transform: scale(1.2); }
+    }  
+}
+
   .avatar {
     padding-top: 1em;
   }
