@@ -1,14 +1,14 @@
-@media only screen and (max-width: 1024px) {
-  
+@media only screen and (min-width: 420px) and (max-width: 1024px) {
+
   h2 {
     margin-top: .5em;
     margin-bottom: 0;
   }
 
-  h4 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 
   .header {
     height: 520px;
@@ -21,8 +21,30 @@
     background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
   }
 
+  .mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #d1490a;
+  }
+
+  .title-mobile {
+    font-family: "Bungee", sans-serif;
+    font-size: 1em;
+    border-radius: 4px;
+    margin-left: .75em;
+  }
+
+  .nav-action-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: .75em;
+    cursor: pointer;
+  }
+
   .avatar {
-    padding-top: 5em;
+    padding-top: 1em;
   }
 
   .name {
@@ -38,4 +60,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .mobile-nav {
+    display: none;
+  }
 }
