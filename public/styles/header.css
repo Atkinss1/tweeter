@@ -1,36 +1,41 @@
-/* reset default header margins */
-h2 {
-  margin-top: .5em;
-  margin-bottom: 0;
+@media only screen and (max-width: 1024px) {
+  
+  h2 {
+    margin-top: .5em;
+    margin-bottom: 0;
+  }
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .header {
+    height: 520px;
+    width: 100%;
+    background-color: #394148;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+  }
+
+  .avatar {
+    padding-top: 5em;
+  }
+
+  .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+  }
+
+  .username {
+    font-size: medium;
+  }
 }
 
-h4 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.header {
-  height: 520px;
-  width: 100%;
-  background-color: #394148;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
-}
-
-.avatar {
-  padding-top: 5em;
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #FFFFFF;
-}
-
-.username {
-  font-size: medium;
+@media only screen and (min-width: 1024px) {
 }
