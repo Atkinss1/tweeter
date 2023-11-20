@@ -47,9 +47,9 @@ $(document).ready(function() {
           <div class="tweet-date">
           ${timeago.format(tweet.created_at)}
             <div class="tweet-icons">
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
+              <div><i class="fa-solid fa-flag"></i></div>
+              <div><i class="fa-solid fa-retweet"></i></div>
+              <div><i class="fa-solid fa-heart"></i></div>
             </div>
           </div>
         </footer>
