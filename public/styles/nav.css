@@ -12,6 +12,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #d1490a;
   }
 
   nav span {
@@ -21,6 +22,7 @@
   .title {
     font-family: "Bungee", sans-serif;
     font-size: 1em;
+    margin: 1em;
     border-radius: 4px;
   }
 
@@ -35,7 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: .5em;
+    margin: 1em;
     cursor: pointer;
   }
 
