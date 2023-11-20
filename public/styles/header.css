@@ -73,4 +73,25 @@
   .mobile-nav {
     display: none;
   }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    width: 10em;
+    position: sticky;
+    left: 0;
+    background-color: #394148;
+    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+    background-size: cover;
+  }
+
+  .name {
+    color: #FFFFFF;
+  }
+
+  h2 {
+    margin: .1em;
+  }
 }
