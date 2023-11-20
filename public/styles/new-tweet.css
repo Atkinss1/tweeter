@@ -81,18 +81,22 @@
   /* textarea Error messages */
 
   #display-empty-message {
+    padding-left: 1em;
+    font-size: .6em;
     display: none;
     color: red;
   }
 
   #display-maximum-message {
+    padding-left: 1em;
+    font-size: .6em;
     display: none;
     color: red;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  
+
 }
 
   /* textarea Error messages */
@@ -106,4 +110,4 @@
     display: none;
     color: red;
   }
-}
+
