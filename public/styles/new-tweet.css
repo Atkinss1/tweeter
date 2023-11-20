@@ -1,5 +1,5 @@
 /* Mobile Rules */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 420px) and (max-width: 1024px) {
   main {
     width: 90%;
     display: flex;
