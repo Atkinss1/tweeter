@@ -13,7 +13,7 @@ html {
 /*
  * Global layout stuff
  */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 420px) and (max-width: 1024px) {
   
   body {
     width: 100%;
@@ -32,8 +32,8 @@ html {
 
   .container-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: .5em;
+    right: .5em;
     display: none;
     cursor: pointer;
   }
@@ -54,7 +54,6 @@ html {
   body {
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     color: #545149;
     background-color: #bebebe;
