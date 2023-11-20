@@ -113,7 +113,7 @@ $(document).ready(function() {
 
   // hide our tweet form and wait for a click event
 
-  const $newTweet = document.querySelector('#slide-out-tweet');
+  const $newTweet = document.querySelectorAll('.slide-out-tweet');
   const $tweetContainer = document.querySelector('.new-tweet');
   $($tweetContainer).hide();
 
@@ -122,6 +122,7 @@ $(document).ready(function() {
   }
   
   $($newTweet).on('click', function() {
+    console.log("successfully clicked");
     toggleTextBox($tweetContainer);
   });
 
