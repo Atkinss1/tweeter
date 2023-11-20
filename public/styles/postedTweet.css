@@ -104,12 +104,106 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .main-tweet-container {
+    width: 100%;
+  }
+
   .tweet-container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    align-items: center;
     margin-top: 40px;
     border: 4px solid black;
+  }
+
+  .tweet-container:hover {
+    box-shadow: 4px 4px #666;
+  }
+
+  .tweet-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .new-tweet-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+  }
+
+  .tweet {
+    width: 100%;
+    padding-inline: 48px;
+    font-weight: bold;
+  }
+
+  .tweet-article .bottom-border {
+    border-bottom: 4px solid black;
+    margin: 24px;
+  }
+
+  .new-tweet-footer .tweet-date{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px 24px 24px;
+  }
+
+  /* Footer icons */
+
+  .tweet-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 3em;
+    margin-right: 1em;
+    color: #d1490a;
+    cursor: pointer;
+  }
+
+  .fa-flag {
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-right: .5em;
+  }
+
+  .fa-flag:hover {
+    color: #394148;
+  }
+
+  .fa-flag:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .fa-retweet {
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-right: .5em;
+  }
+
+  .fa-retweet:hover {
+    color: #394148;
+  }
+
+  .fa-retweet:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .fa-heart {
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    margin-right: .5em;
+  }
+
+  .fa-heart:hover {
+    color: #394148;
+  }
+
+  .fa-heart:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
 }
 
