@@ -78,9 +78,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
-    width: 10em;
     position: sticky;
+    margin-left: 1em;
     left: 0;
     background-color: #394148;
     background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
