@@ -40,45 +40,47 @@
       </div>
     </nav>
     <!-- header -->
-    <header class="header">
-      <div class="mobile-nav">
-        <span><div class="title-mobile">tweeter</div></span>
-        <div class="slide-out-tweet">
-          <div class="nav-action-mobile">
-            <div> <b>write</b> a new tweet</div>
-            <i class="fa-solid fa-angles-down" style="color: #ffffff;"></i>
+    <div class="wrapper">
+      <header class="header">
+        <div class="mobile-nav">
+          <span><div class="title-mobile">tweeter</div></span>
+          <div class="slide-out-tweet">
+            <div class="nav-action-mobile">
+              <div> <b>write</b> a new tweet</div>
+              <i class="fa-solid fa-angles-down" style="color: #ffffff;"></i>
+            </div>
           </div>
         </div>
+        <img src="/images/1000_F_632181738_93weL8X66KWgc1EcuTkczBKaDIUY2AmZ-fotor-202311102213.png" class="avatar">
+      <div class="name">
+          <h2>Jordan Atkins</h2>
+          <h4 class="username">@Atkinss</h4>
       </div>
-      <img src="/images/1000_F_632181738_93weL8X66KWgc1EcuTkczBKaDIUY2AmZ-fotor-202311102213.png" class="avatar">
-    <div class="name">
-        <h2>Jordan Atkins</h2>
-        <h4 class="username">@Atkinss</h4>
-    </div>
-    </header>
+      </header>
 
-    <!-- Page-specific (main) content here -->
-    <main>
-      <section class="new-tweet">
-        <h2 class="compose-tweet">Compose Tweet</h2>
-        <form class="text-box" action="/tweets" method="post">
-          <textarea name="text" class="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class="button-counter">
-            <button class="button" type="submit">Tweet</button>
-            <div id="display-empty-message">Please provide a tweet before submitting..</div>
-            <div id="display-maximum-message">The tweet has exceeded max character count..</div>
-            <output name="counter" class="counter" for="tweet-text">
-              140
-            </output>
-          </div>
-        </form>
-        <!-- This section is for individual Tweets -->
-      </section>
-      <div class="main-tweet-container">
+      <!-- Page-specific (main) content here -->
+      <main>
+        <section class="new-tweet">
+          <h2 class="compose-tweet">Compose Tweet</h2>
+          <form class="text-box" action="/tweets" method="post">
+            <textarea name="text" class="tweet-text" placeholder="What are you humming about?"></textarea>
+            <div class="button-counter">
+              <button class="button" type="submit">Tweet</button>
+              <div id="display-empty-message">Please provide a tweet before submitting..</div>
+              <div id="display-maximum-message">The tweet has exceeded max character count..</div>
+              <output name="counter" class="counter" for="tweet-text">
+                140
+              </output>
+            </div>
+          </form>
+          <!-- This section is for individual Tweets -->
+        </section>
+        <div class="main-tweet-container">
+        </div>
+      </main>
+      <div class="container-top">
+        <i class="fa-regular fa-circle-up"></i>
       </div>
-    </main>
-    <div class="container-top">
-      <i class="fa-regular fa-circle-up"></i>
     </div>
   </body>
 </html>
