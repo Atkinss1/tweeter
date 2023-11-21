@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #FFFFFF;
+  color:#333333;
 }
 
 .username {
@@ -25,12 +25,15 @@ p {
 .header {
   height: 520px;
   width: 100%;
-  background-color: #394148;
+  background-color:#31DED9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("https://www.transparenttextures.com/patternsgreen-dust-and-scratches.png");
+  background-image: url("../images/cool-background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   } 
 
 @media only screen and (min-width: 1024px) {
