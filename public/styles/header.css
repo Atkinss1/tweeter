@@ -22,42 +22,27 @@ p {
   margin: 0;
 }
 
-@media only screen and (min-width: 420px) and (max-width: 1024px) {
-  
-
-  .header {
-    height: 520px;
-    width: 100%;
-    background-color: #394148;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+.header {
+  height: 520px;
+  width: 100%;
+  background-color: #394148;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://www.transparenttextures.com/patternsgreen-dust-and-scratches.png");
   } 
-}
-
-
 
 @media only screen and (min-width: 1024px) {
 
   .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 100px;
     position: sticky;
-    margin-left: 1em;
-    left: 0;
-    background-color: #394148;
-    background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
-    background-size: cover;
+    top: 5em;
+    left: 1em;
   }
 
-  .name {
-    color: #FFFFFF;
-  }
 
-  h2 {
-    margin: .1em;
-  }
 }
