@@ -4,7 +4,7 @@
     display: flex;
     position: absolute;
     justify-content: space-between;
-    color: #ffffff;
+    color:  #333333;
   }
 
   .title {
@@ -45,7 +45,7 @@
     display: flex;
     position: fixed;
     justify-content: space-between;
-    background-color: #d1490a;
+    background-color: #31adde61;
     z-index: 100;
   }
 }

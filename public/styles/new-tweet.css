@@ -5,7 +5,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #bebebe;
+    background-color: #31DED9;
+    background-image: url("../images/cool-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .compose-tweet {
@@ -30,7 +34,11 @@
     border-bottom: 4px solid black;
     line-height: 22px;
     box-sizing: border-box;
-    background-color:  #bebebe;
+    background-color: #31DED9;
+    background-image: url("../images/cool-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-size: inherit;
     font-weight: bold;
     resize: none;
@@ -56,11 +64,11 @@
     }
 
     .button {
-    background-color: #d1490a;
+    background-color: #31aadeca;
     color: #FFFFFF;
     border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0 10px 20px #d1490a;
+    box-shadow: 0 10px 20px #31ded8;
     }
     
     .button:hover {
@@ -100,17 +108,16 @@
   main {
     width: 100%;
     align-items: flex-end;
+    background-color: #31DED9;
   }
 
-  .compose-tweet {
-    margin-bottom: 20px;
-  }
   
   .text-box {
     margin-right: 1em;
   }
 
   .new-tweet {
-    justify-content: space-between;  
+    justify-content: space-between;
+    width: 85%; 
   }
 }
