@@ -13,8 +13,7 @@ html {
 /*
  * Global layout stuff
  */
-@media only screen and (min-width: 420px) and (max-width: 1024px) {
-  
+
   body {
     width: 100%;
     display: flex;
@@ -56,42 +55,15 @@ html {
     from { transform: scale(.8); }
     to { transform: scale(1.2); }
     }
-  }
 
 @media only screen and (min-width: 1024px) {
-  body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #545149;
-    background-color: #bebebe;
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 24px;
-  }
 
   .wrapper {
     width: 100%;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 100px;
   }
-
-   .container-top {
-    position: fixed;
-    bottom: .5em;
-    right: .5em;
-    display: none;
-    cursor: pointer;
-  }
-
-   .fa-regular.fa-circle-up {
-    font-size: 40px;
-    color: #d1490a;
-    animation: pulse 1s infinite ease-in-out alternate;
-  }
-    @keyframes pulse {
-    from { transform: scale(.8); }
-    to { transform: scale(1.2); }
-    }
 }
