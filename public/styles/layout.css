@@ -19,10 +19,14 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #545149;
-    background-color: #bebebe;
+    color: #ffffff;
+    background-color: #31DED9;
     font-family: "Source Sans 3", sans-serif;
     font-size: 24px;
+    background-image: url("../images/cool-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   /*
@@ -48,7 +52,7 @@ html {
 
   .fa-regular.fa-circle-up {
     font-size: 40px;
-    color: #d1490a;
+    color: #888888;
     animation: pulse 1s infinite ease-in-out alternate;
   }
     @keyframes pulse {
