@@ -47,12 +47,12 @@
   }
   
   .new-tweet textarea:hover {
-    text-shadow: 0 10px 20px #d1490a;
+    text-shadow: 0 10px 20px #124b49;
     transition: text shadow 1s ease-in;
   }
 
   .new-tweet ::placeholder {
-    color:#d1490a;
+    color:#000000;
     opacity: 30%;
   }
 
