@@ -4,6 +4,10 @@ Hello there! This is my take on a Tweeter clone, a simple Twitter-like project. 
 ## What's Inside
 * Basic Tweeter Features: It mimics the core functionality of Twitter on a single page.
 * My Styling Twist: I've spiced things up with my own CSS styles, giving it a unique look.
+
+!['mobile tweeter'](https://github.com/Atkinss1/tweeter/blob/master/docs/mobile-screenshot.png?raw=true)
+
+!['desktop tweeter'](https://github.com/Atkinss1/tweeter/blob/master/docs/desktop-screenshot.png?raw=true)
 ## How to Use
 1. Get the Code: Fork and clone this template to your local machine.
 
