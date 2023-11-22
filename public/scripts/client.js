@@ -84,7 +84,7 @@ $(document).ready(function() {
         $('.tweet-text').val('');
         console.log(`Success: ${res}`);
         loadTweets();
-
+        toggleTextBox($tweetContainer);
       },
       error: function(err) {
         console.log(`Error: ${err}`);
