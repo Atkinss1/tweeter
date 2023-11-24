@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $('.tweet-text').on('input', function(event) {
     updateCharCount($(this));
-    
   });
   
   const updateCharCount = function($element) {
@@ -17,7 +16,7 @@ $(document).ready(function() {
     if ($remainingChars < 0) {
       $counterElement.css('color', 'rgb(209, 73, 10)');
       $counterElement.css('animation', 'button 1s ease-out infinite');
-    } else {
+    } else if ($remainingChars >= 0) {
       $counterElement.css('color', '');
       $counterElement.css('animation-play-state', 'paused');
     }
