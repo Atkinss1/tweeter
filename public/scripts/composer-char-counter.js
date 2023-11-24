@@ -3,12 +3,6 @@ $(document).ready(function() {
     updateCharCount($(this));
     
   });
-
-  $('.text-box').on('keypress', function(event) {
-    if (event.keyCode === 13) {
-      $(this).submit();
-    }
-  });
   
   const updateCharCount = function($element) {
 
