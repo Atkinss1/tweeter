@@ -83,6 +83,7 @@ $(document).ready(function() {
       success: function(res) {
         $('.tweet-text').val('');
         console.log(`Success: ${res}`);
+        charCountReset();
         loadTweets();
       },
       error: function(err) {
@@ -121,7 +122,6 @@ $(document).ready(function() {
   }
   
   $($newTweet).on('click', function() {
-    console.log("successfully clicked");
     toggleTextBox($tweetContainer);
   });
 
@@ -131,6 +131,12 @@ $(document).ready(function() {
       $(this).submit();
     }
   });
+
+  const charCountReset = function() {
+    const $maxCharLength = 140;
+    let $counterElement = $('.tweet-text').siblings('.button-counter').find('.counter');
+    $counterElement.text($maxCharLength);
+  };
 
 });
 
