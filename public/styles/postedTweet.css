@@ -37,6 +37,7 @@ box-shadow: 4px 4px #3498db;
 }
 
 .tweet {
+  word-wrap: break-word;
   width: 100%;
   padding-inline: 48px;
   font-weight: bold;
