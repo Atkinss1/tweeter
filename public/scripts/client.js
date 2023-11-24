@@ -125,13 +125,6 @@ $(document).ready(function() {
     toggleTextBox($tweetContainer);
   });
 
-  // allow user to submit the form using "Enter" keypress
-  $('.text-box').on('keypress', function(event) {
-    if (event.keyCode === 13) {
-      $(this).submit();
-    }
-  });
-
   const charCountReset = function() {
     const $maxCharLength = 140;
     let $counterElement = $('.tweet-text').siblings('.button-counter').find('.counter');
