@@ -1,6 +1,6 @@
 .avatar {
   padding-top: 1em;
-  border-radius: 999px;
+  border-radius: 50% 80% / 70% 10%;
 }
 
 .name {
