@@ -1,12 +1,23 @@
 $(document).ready(function() {
-  $('.tweet-text').on('input', function() {
-    let $textValue = $(this).val();
+  $('.tweet-text').on('input', function(event) {
+    updateCharCount($(this));
+    
+  });
+
+  $('.text-box').on('keypress', function(event) {
+    if (event.keyCode === 13) {
+      $(this).submit();
+    }
+  });
+  
+  const updateCharCount = function($element) {
+
+    let $textValue = $element.val();
     let $currentTextLength = $textValue.length;
     const $maxCharLength = 140;
     const $remainingChars = $maxCharLength - $currentTextLength;
     
-    let $counterElement = $(this).siblings('.button-counter').find('.counter');
-
+    let $counterElement = $element.siblings('.button-counter').find('.counter');
     $counterElement.text($remainingChars);
 
     if ($remainingChars < 0) {
@@ -16,8 +27,8 @@ $(document).ready(function() {
       $counterElement.css('color', '');
       $counterElement.css('animation-play-state', 'paused');
     }
+  };
 
-  });
   // listener for button to scroll to top
   $(window).scrollTop(0);
 
