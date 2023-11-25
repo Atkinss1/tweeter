@@ -1,6 +1,5 @@
 
 .main-tweet-container {
-width: 100%;
 display: flex;
 flex-direction: column;
 gap: 15px;
@@ -12,10 +11,9 @@ display: flex;
 align-items: center;
 background: linear-gradient(135deg, #31aade59, #899ae06d);
 backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
 border-radius: 20px;
-border: 1px solid, #31DEA0;
 box-shadow: 0 8px 32px 0 rgba(245, 244, 244, 0.37);
+transition: all .5s ease;
 }
 
 .tweet-container:hover {
@@ -110,6 +108,10 @@ box-shadow: 4px 4px #3498db;
   transform: translateY(4px);
 }
 
+.main-tweet-container:has(.tweet-container:hover) > .tweet-container:not(:hover) {
+  scale: .95;
+  opacity: .5;
+}
 
 @media only screen and (min-width: 1024px) {
 
