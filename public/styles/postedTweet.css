@@ -111,6 +111,7 @@ box-shadow: 4px 4px #3498db;
 .main-tweet-container:has(.tweet-container:hover) > .tweet-container:not(:hover) {
   scale: .95;
   opacity: .5;
+  filter: blur(2px);
 }
 
 @media only screen and (min-width: 1024px) {
