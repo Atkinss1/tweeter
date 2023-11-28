@@ -29,14 +29,12 @@ box-shadow: 4px 4px #3498db;
 .new-tweet-header {
   display: flex;
   align-items: center;
-  flex-direction: row;
   justify-content: space-between;
   padding: 24px;
 }
 
 .tweet {
   word-wrap: break-word;
-  width: 100%;
   padding-inline: 48px;
   font-weight: bold;
 }
